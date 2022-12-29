@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @stack('styles')
-        <title>Laravel</title>
+        <title>GBP Red Social</title>
 				@vite('resources/css/app.css')
 				@vite('resources/js/app.js')
     </head>
@@ -37,7 +37,7 @@
 
             @guest
               <nav class="flex gap-2 items-center">
-                <a href="/login" class="font-bold uppercase text-gray-600 text-sm">Login</a>
+                <a href=" {{ route('login') }}" class="font-bold uppercase text-gray-600 text-sm">Login</a>
                 <a href="{{ route('register') }}" class="font-bold uppercase text-gray-600 text-sm">Crear cuenta</a>
               </nav>
             @endguest
